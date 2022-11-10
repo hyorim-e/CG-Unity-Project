@@ -9,7 +9,7 @@ public class sliderTest : MonoBehaviour
 
     void Start()
     {
-        //slider.minValue = 0;
+        //slider.minValue = 1;
         //slider.maxValue = 100;
         //slider.wholeNumbers = true;
        // slider.value = 1;
