@@ -21,11 +21,10 @@ public class ButtonManager : MonoBehaviour
         valueText.text = "0%"; // 텍스트 초기화
         //valueText.text = Mathf.RoundToInt(value) + "%"; 
 
-        slider.onValueChanged.RemoveAllListeners();
-
         slider.minValue = 0;
         slider.value = 0;
 
+        slider.onValueChanged.RemoveAllListeners();
     }
     #endregion
 }
