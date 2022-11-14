@@ -1216,7 +1216,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 689cd5de8640c994da3ea3fcc0c5c82e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pixelate: 1
   slider: {fileID: 777478244}
 --- !u!114 &963194230
 MonoBehaviour:
@@ -1588,7 +1587,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   volume: {fileID: 1294333551}
   slider: {fileID: 0}
-  BloomBtn: {fileID: 0}
+  PPCamera: {fileID: 0}
+  pixelCamera: {fileID: 0}
 --- !u!114 &1294333551
 MonoBehaviour:
   m_ObjectHideFlags: 0
