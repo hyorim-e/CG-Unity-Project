@@ -6,17 +6,23 @@ using UnityEngine.UI;
 public class sliderTest : MonoBehaviour
 {
     public Slider slider;
+    
 
     void Start()
     {
-        //slider.minValue = 0;
-        //slider.maxValue = 100;
+        // slider.minValue = 0;
+        // slider.maxValue = 100;
         //slider.wholeNumbers = true;
-       // slider.value = 1;
-    }
+        // slider.value = 1;
+        
 
+    }
+    
     public void OnValueChanged(float value)
     {
         Debug.Log("New Value" + value);
+
     }
+
+  
 }
