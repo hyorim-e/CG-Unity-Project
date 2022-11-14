@@ -37,7 +37,6 @@ public class PostProcessingEffects : MonoBehaviour
         slider.onValueChanged.RemoveAllListeners();
         PPCamera.SetActive(false);
         pixelCamera.SetActive(true);
-        //slider.onValueChanged.AddListener(delegate { Pixelate(); });
         slider.value = 0;
     }
 

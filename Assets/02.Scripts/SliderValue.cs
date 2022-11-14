@@ -6,8 +6,7 @@ using UnityEngine.UI;
 public class SliderValue : MonoBehaviour
 {
     Text valueText;
-
-    
+   
     void Start()
     {
         valueText = GetComponent<Text>();
@@ -18,11 +17,5 @@ public class SliderValue : MonoBehaviour
         // valueText.text = Mathf.RoundToInt(value * 100) + "%";
         valueText.text = Mathf.RoundToInt(value) + "%";
 
-    }
-
-    
-    void Update()
-    {
-        
     }
 }

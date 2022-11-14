@@ -5,31 +5,27 @@ using UnityEngine.UI;
 
 public class ButtonManager : MonoBehaviour
 {
-    Text valueText;
+    public Text valueText;
     public Slider slider;
 
-    
-    void Start()
-    {
-        valueText = GetComponent<Text>();
-    }
+    public GameObject PPCamera;
+    public GameObject pixelCamera;
+
     #region 초기화
-    public void ResetText(float value)
+    //public void OnClickResetButton(float value)
+    public void OnClickResetButton()
     {
-        valueText.text = Mathf.RoundToInt(value) + "%";
-    }
+        PPCamera.SetActive(true);
+        pixelCamera.SetActive(false);
 
+        valueText.text = "0%"; // 텍스트 초기화
+        //valueText.text = Mathf.RoundToInt(value) + "%"; 
 
-    public void OnClickResetButton(float value)
-    {
-        // slider.minValue = 0;
+        slider.onValueChanged.RemoveAllListeners();
+
+        slider.minValue = 0;
         slider.value = 0;
-    }
 
-#endregion
-
-    void Update()
-    {
-        
     }
+    #endregion
 }
