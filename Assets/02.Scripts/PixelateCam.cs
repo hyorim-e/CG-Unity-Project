@@ -6,16 +6,11 @@ using UnityEngine.UI;
 //[ExecuteInEditMode]
 public class PixelateCam : MonoBehaviour
 {
-    [Range(1, 100)] public int pixelate;
+    //[Range(1, 100)] public int pixelate;
 
     public Slider slider;
 
-    void Start()
-    {
-
-    }
-
-    private void OnRenderImage(RenderTexture source, RenderTexture destination)
+    void OnRenderImage(RenderTexture source, RenderTexture destination)
     {
         source.filterMode = FilterMode.Point;
         RenderTexture resultTexture = RenderTexture.GetTemporary(source.width / (int)slider.value, source.height / (int)slider.value, 0, source.format);
