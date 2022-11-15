@@ -7,6 +7,8 @@ public class ButtonManager : MonoBehaviour
 {
     public Text valueText;
     public Slider slider;
+    public GameObject cube;
+    public GameObject scenery;
 
     public GameObject PPCamera;
     public GameObject pixelCamera;
@@ -25,6 +27,23 @@ public class ButtonManager : MonoBehaviour
         slider.value = 0;
 
         slider.onValueChanged.RemoveAllListeners();
+    }
+    #endregion
+
+    #region 큐브 버튼
+    public void OnCubeButtonClick()
+    {
+
+        scenery.SetActive(false);
+        cube.SetActive(true);
+    }
+    #endregion
+
+    #region 풍경 버튼
+    public void OnSceneryButtonClick()
+    {
+        cube.SetActive(false);
+        scenery.SetActive(true);
     }
     #endregion
 }
