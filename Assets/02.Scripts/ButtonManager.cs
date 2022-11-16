@@ -9,6 +9,9 @@ public class ButtonManager : MonoBehaviour
     #region 변수 선언
     public Text valueText;
     public Slider slider;
+    public Slider slider_1;
+    public Slider slider_2;
+    public Slider slider_3;
     public GameObject cube;
     public GameObject scenery;
 
