@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering.PostProcessing;
 using UnityEngine.UI;
 
 public class ButtonManager : MonoBehaviour
 {
+    #region 변수 선언
     public Text valueText;
     public Slider slider;
     public GameObject cube;
@@ -12,6 +14,7 @@ public class ButtonManager : MonoBehaviour
 
     public GameObject PPCamera;
     public GameObject pixelCamera;
+    #endregion
 
     #region 초기화
     //public void OnClickResetButton(float value)
