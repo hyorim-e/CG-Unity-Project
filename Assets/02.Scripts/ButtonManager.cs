@@ -8,12 +8,13 @@ public class ButtonManager : MonoBehaviour
 {
     #region 변수 선언
     public Text valueText;
-    public Slider slider;
-    public Slider slider_1;
-    public Slider slider_2;
-    public Slider slider_3;
+    public Slider slider; 
     public GameObject cube;
     public GameObject scenery;
+    public Slider slider1;
+    public Slider slider2;
+    public Slider slider3;
+    public GameObject slidersGameObject;
 
     public GameObject PPCamera;
     public GameObject pixelCamera;
@@ -30,7 +31,11 @@ public class ButtonManager : MonoBehaviour
         //valueText.text = Mathf.RoundToInt(value) + "%"; 
 
         slider.minValue = 0;
-        slider.value = 0;
+        slider.value = 0;  // 효과 조절 메인 슬라이더 바
+        slider1.value = 0;
+        slider2.value = 0;
+        slider3.value = 0;
+
 
         slider.onValueChanged.RemoveAllListeners();
     }
@@ -50,6 +55,22 @@ public class ButtonManager : MonoBehaviour
     {
         cube.SetActive(false);
         scenery.SetActive(true);
+    }
+    #endregion
+
+    #region 슬라이더 바 3개
+
+    // Depth of Field, Color Grading 클릭 시 슬라이드 3개 나타나기
+    public void OnButtonClick()
+    {
+        slidersGameObject.SetActive(true);
+
+    } 
+
+    // 그 외 버튼 클릭 시 슬라이드 3개 없애기
+    public void OnFourButtonClick()
+    {
+        slidersGameObject.SetActive(false);
     }
     #endregion
 }
