@@ -11138,9 +11138,9 @@ MonoBehaviour:
   slider: {fileID: 777478244}
   cube: {fileID: 1627751859}
   scenery: {fileID: 2068623268}
-  slider1: {fileID: 0}
-  slider2: {fileID: 0}
-  slider3: {fileID: 0}
+  slider1: {fileID: 1588616228}
+  slider2: {fileID: 249690674}
+  slider3: {fileID: 133755041}
   slidersGameObject: {fileID: 1274886947}
   PPCamera: {fileID: 963194225}
   pixelCamera: {fileID: 1235692658}
