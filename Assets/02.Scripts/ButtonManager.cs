@@ -13,7 +13,6 @@ public class ButtonManager : MonoBehaviour
     public GameObject scenery;
     public Slider slider1;
     public Slider slider2;
-    public Slider slider3;
     public GameObject slidersGameObject;
 
     public GameObject PPCamera;
@@ -34,7 +33,7 @@ public class ButtonManager : MonoBehaviour
         slider.value = 0;  // 효과 조절 메인 슬라이더 바
         slider1.value = 0;
         slider2.value = 0;
-        slider3.value = 0;
+        
 
 
         slider.onValueChanged.RemoveAllListeners();
