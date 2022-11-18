@@ -118,7 +118,10 @@ public class PostProcessingEffects : MonoBehaviour
         PPCamera.SetActive(true);
         pixelCamera.SetActive(false);
 
-        slider.minValue = 0;
+        _DepthOfField.enabled.Override(true);
+        _DepthOfField.focusDistance.Override(.1f);
+
+        slider.minValue = .1f;
         slider.maxValue = 300;
         slider.onValueChanged.RemoveAllListeners();
         slider.onValueChanged.AddListener(delegate { DepthOfField(); });
