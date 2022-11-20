@@ -53,7 +53,7 @@ public class ButtonManager : MonoBehaviour
         sliderText2.text = "0";
         sliderText3.text = "0";
         //valueText.text = Mathf.RoundToInt(value) + "%"; 
-
+        
         slider1.minValue = 0;
         slider2.minValue = 0;
         slider3.minValue = 0;

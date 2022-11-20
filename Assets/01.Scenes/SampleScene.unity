@@ -3653,7 +3653,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Vignette
+  m_Text: "\uBE44\uB124\uD2B8"
 --- !u!222 &471912231
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6822,9 +6822,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Depth of
-
-    Field'
+  m_Text: "\uD53C\uC0AC\uACC4\uC2EC\uB3C4"
 --- !u!222 &811171760
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7506,7 +7504,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Bloom
+  m_Text: "\uBE14\uB8F8"
 --- !u!222 &878149762
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -13000,9 +12998,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Color
-
-    Grading'
+  m_Text: "\uCEEC\uB7EC \uBD84\uB958"
 --- !u!222 &1550401125
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -17356,9 +17352,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Chromatic
-
-    Aberration'
+  m_Text: "\uC0C9\uC218\uCC28"
 --- !u!222 &2097054517
 CanvasRenderer:
   m_ObjectHideFlags: 0
