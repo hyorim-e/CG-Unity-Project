@@ -102,7 +102,7 @@ public class PostProcessingEffects : MonoBehaviour
     }
     #endregion
 
-    #region Chromatic Aberration
+    #region Chromatic Aberration(색 수차)
     public void ChromaticClick()
     {
         PPCamera.SetActive(true);
@@ -125,7 +125,7 @@ public class PostProcessingEffects : MonoBehaviour
     }
     #endregion
 
-    #region Depth of Field
+    #region Depth of Field(피사계 심도)
     public void DepthOfFieldClick()
     {
         PPCamera.SetActive(true);
@@ -173,7 +173,7 @@ public class PostProcessingEffects : MonoBehaviour
     }
     #endregion
 
-    #region Color Grading
+    #region Color Grading(컬러 분류)
     public void ColorGradingClick()
     {
         PPCamera.SetActive(true);
@@ -218,6 +218,25 @@ public class PostProcessingEffects : MonoBehaviour
     public void ColorGrading_Contrast()
     {
         _ColorGrading.contrast.value = slider3.value;
+    }
+    #endregion
+
+    #region 적용된 값 초기화
+    public void PostProcessingReset()
+    {
+        _Bloom.intensity.value = 0;
+
+        _Vignette.intensity.value = 0;
+
+        _Chromatic.intensity.value = 0;
+
+        _DepthOfField.focusDistance.value = .1f;
+        _DepthOfField.aperture.value = .1f;
+        _DepthOfField.focalLength.value = 1;
+
+        _ColorGrading.hueShift.value = 0;
+        _ColorGrading.saturation.value = 0;
+        _ColorGrading.contrast.value = 0;
     }
     #endregion
 }
