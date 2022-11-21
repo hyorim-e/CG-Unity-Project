@@ -100,4 +100,11 @@ public class ButtonManager : MonoBehaviour
         slider2_obj.SetActive(false);
     }
     #endregion
+
+    #region 나가기 버튼
+    public void OnQuitButtonClick()
+    {
+        Application.Quit();
+    }
+    #endregion
 }
