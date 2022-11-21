@@ -26,6 +26,14 @@ public class ButtonManager : MonoBehaviour
 
     public GameObject PPCamera;
     public GameObject pixelCamera;
+
+    public GameObject hsText;  // Hue Shift 텍스트
+    public GameObject saturationText;
+    public GameObject constrastText;
+    public GameObject fdText;  // Focus Disatance 텍스트
+    public GameObject apertureText;
+    public GameObject flText;  // Focal Length 텍스트
+
     #endregion
 
     #region 슬라이더 텍스트 업데이트
@@ -65,6 +73,8 @@ public class ButtonManager : MonoBehaviour
         slider3.value = 0;
         slider1.value = 0;
         slider2.value = 0;
+
+    
     }
     #endregion
 
@@ -98,6 +108,40 @@ public class ButtonManager : MonoBehaviour
     {
         slider1_obj.SetActive(false);
         slider2_obj.SetActive(false);
+
+        hsText.gameObject.SetActive(false);
+        saturationText.gameObject.SetActive(false);
+        constrastText.gameObject.SetActive(false);
+
+        fdText.gameObject.SetActive(false);
+        apertureText.gameObject.SetActive(false);
+        flText.gameObject.SetActive(false);
+    }
+    #endregion
+
+    #region 피사계 심도 슬라이더 텍스트
+    public void OnDepthOfFieldClick()
+    {
+        hsText.gameObject.SetActive(false);
+        saturationText.gameObject.SetActive(false);
+        constrastText.gameObject.SetActive(false);
+
+        fdText.gameObject.SetActive(true);
+        apertureText.gameObject.SetActive(true);
+        flText.gameObject.SetActive(true);
+    }
+    #endregion
+
+    #region 컬러 그레이딩 슬라이더 텍스트
+    public void OnColorGradingClick()
+    {
+        hsText.gameObject.SetActive(true);
+        saturationText.gameObject.SetActive(true);
+        constrastText.gameObject.SetActive(true);
+
+        fdText.gameObject.SetActive(false);
+        apertureText.gameObject.SetActive(false);
+        flText.gameObject.SetActive(false);
     }
     #endregion
 
