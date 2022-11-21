@@ -27,10 +27,23 @@ public class CameraMove : MonoBehaviour
         Vector3 moveDirect = (Vector3.forward * _vertical) + (Vector3.right * _horizontal);
         _transform.Translate(moveDirect.normalized * Time.deltaTime * moveSpd, Space.Self);
 
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            if (!isCameraRotate.isOn) isCameraRotate.isOn = true;
+            else isCameraRotate.isOn = false;
+        }
+
         if (isCameraRotate.isOn)
         {
             _transform.Rotate(Vector3.up * Time.deltaTime * rotateSpd * Input.GetAxis("Mouse X"));
-        }
-        
+        }      
+    }
+
+    public void ResetCameraTransform()
+    {
+        isCameraRotate.isOn = false;
+
+        _transform.position = new Vector3(63.75f, 39.5f, 58);
+        _transform.rotation = Quaternion.Euler(0, 215.3f, 0);
     }
 }

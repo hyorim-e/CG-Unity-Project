@@ -11,7 +11,12 @@ public class ButtonManager : MonoBehaviour
     public Text sliderText2;
     public Text sliderText3;
 
-    Text sliderText;
+    public Text sliderName1_1;
+    public Text sliderName1_2;
+    public Text sliderName2_1;
+    public Text sliderName2_2;
+    public Text sliderName3_1;
+    public Text sliderName3_2;
 
     public GameObject cube;
     public GameObject scenery;
@@ -73,8 +78,6 @@ public class ButtonManager : MonoBehaviour
         slider3.value = 0;
         slider1.value = 0;
         slider2.value = 0;
-
-    
     }
     #endregion
 
@@ -83,6 +86,17 @@ public class ButtonManager : MonoBehaviour
     {
         scenery.SetActive(false);
         cube.SetActive(true);
+
+        sliderText1.color = Color.white;
+        sliderText2.color = Color.white;
+        sliderText3.color = Color.white;
+
+        sliderName1_1.color = Color.white;
+        sliderName1_2.color = Color.white;
+        sliderName2_1.color = Color.white;
+        sliderName2_2.color = Color.white;
+        sliderName3_1.color = Color.white;
+        sliderName3_2.color = Color.white;
     }
     #endregion
 
@@ -91,6 +105,17 @@ public class ButtonManager : MonoBehaviour
     {
         cube.SetActive(false);
         scenery.SetActive(true);
+
+        sliderText1.color = Color.black;
+        sliderText2.color = Color.black;
+        sliderText3.color = Color.black;
+
+        sliderName1_1.color = Color.black;
+        sliderName1_2.color = Color.black;
+        sliderName2_1.color = Color.black;
+        sliderName2_2.color = Color.black;
+        sliderName3_1.color = Color.black;
+        sliderName3_2.color = Color.black;
     }
     #endregion
 

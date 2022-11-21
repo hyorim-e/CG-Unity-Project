@@ -42,6 +42,7 @@ public class PostProcessingEffects : MonoBehaviour
         //_Bloom.intensity.value = Mathf.Lerp(_Bloom.intensity.value, 15, .5f * Time.deltaTime);
         //_Vignette.intensity.value = Mathf.Lerp(_Vignette.intensity.value, 15, .05f * Time.deltaTime);
     }
+
     #region Pixelate
     public void PixelateClick()
     {
